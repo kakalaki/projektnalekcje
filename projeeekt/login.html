@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klub podpalaczy książek</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Klub podpalaczy książek</h1>
+      </header>
+      <nav>
+        <span><a href="./rejestracja.html">Zarejestruj się</a></span
+        ><span><a href="./login.html"> Zaloguj się</a></span>
+      </nav>
+      <main>
+        <form action="./php/login.php" method="post">
+          <h3>Logowanie się</h3><br>
+          <span>Nick lub Email:</span><br />
+          <input type="text" name="nick" id="nick" /><br />
+          <span>Hasło:</span><br />
+          <input type="password" name="haslo" id="haslo" /><br />
+          <input type="submit" value="Zaloguj się" />
+        </form>
+      </main>
+      <footer>
+        <span>Projekt na PAI - Kacper Kowalczyk 2024 &copy;</span>
+      </footer>
+    </div>
+  </body>
+</html>

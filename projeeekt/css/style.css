@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    animation: bg 15s infinite;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+@keyframes bg {
+    0% {
+        background-color: #f5f5f5;
+    }
+
+    25% {
+        background-color: #fff6f6;
+    }
+
+    60% {
+        background-color: #c6c3da;
+    }
+
+    80% {
+        background-color: #fdfbec;
+    }
+
+    100% {
+        background-color: #f5f5f5;
+    }
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 40vw;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+}
+
+@keyframes headertransform {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+header h1 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    transition: headertransform 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(240, 240, 240, 0.7);
+    padding: 10px 3vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+nav a {
+    margin: 0 15vw;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+}
+
+nav a:hover {
+    color: #888;
+}
+
+nav a:active {
+    color: #555;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    font-size: 9px;
+}
+
+form input[type="text"], [type="password"], [type="email"], [type="date"]{
+    width: 13vw;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+form input[type="submit"] {
+    width: 13vw;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+form #wymagania {
+    width: 13vw;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    position: absolute;
+    top: 50vh;
+    left: 57vw;
+    transition: 0.4s ease-in-out;
+}
+
+main form {
+    margin: 2vh;
+}
+
+form input[type="submit"]:hover {
+    background: rgba(30, 30, 30, 0.6);
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+form input[type="submit"]:active {
+    background: rgba(30, 30, 30, 0.8);
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5vh 0;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}

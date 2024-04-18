@@ -1,0 +1,1 @@
+// cos ma powstac ale jeszcze nie

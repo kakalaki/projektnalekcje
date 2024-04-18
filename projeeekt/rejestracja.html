@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klub podpalaczy książek</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Klub podpalaczy książek</h1>
+      </header>
+      <nav>
+        <span><a href="./rejestracja.html">Zarejestruj się</a></span
+        ><span><a href="./login.html"> Zaloguj się</a></span>
+      </nav>
+      <main>
+        <form action="./php/rejestracja.php" method="post">
+          <h3>Rejestracja</h3>
+          <p>* - pola obowiązkowe</p>
+          <span>*Imię:</span><br />
+          <input type="text" name="imie" id="imie" /><br />
+          <span>Nazwisko:</span><br />
+          <input type="text" name="nazwisko" id="nazwisko" /><br />
+          <span>*Nick:</span><br />
+          <input type="text" name="nick" id="nick" /><br />
+          <span>*Email:</span><br />
+          <input type="email" name="email" id="email" /><br />
+          <span>*Hasło:</span><br />
+          <input type="password" name="haslo" id="haslo" /><br />
+          <div id="wymagania">
+            <span>Hasło musi zawierać:</span><br />
+            <span id="haslo_dlugosc">- co najmniej 8 znaków</span><br />
+            <span id="haslo_mala">- co najmniej jedną małą literę</span><br />
+            <span id="haslo_duza">- co najmniej jedną dużą literę</span><br />
+            <span id="haslo_cyfra"
+              >- co najmniej jedną cyfrę lub znak specjalny</span
+            ><br />
+          </div>
+          <span>*Powtórz hasło:</span><br />
+          <input type="password" name="haslo2" id="haslo2" /><br />
+          <span>*Data urodzenia:</span><br />
+          <input type="date" name="data_urodzenia" id="data_urodzenia" /><br />
+          <span>Płeć: </span><br />
+          <input type="radio" name="plec" value="Mężczyzna" id="plec_m" />
+          <label for="plec_m">Mężczyzna </label>
+          <input type="radio" name="plec" value="Kobieta" id="plec_k" />
+          <label for="plec_k"> Kobieta</label><br />
+          <input type="submit" value="Zarejestruj się" />
+        </form>
+      </main>
+      <footer>
+        <span>Projekt na PAI - Kacper Kowalczyk 2024 &copy;</span>
+      </footer>
+    </div>
+  </body>
+</html>
