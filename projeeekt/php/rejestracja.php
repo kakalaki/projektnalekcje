@@ -20,7 +20,7 @@
             <h1>Klub podpalaczy książek</h1>
         </header>
         <nav>
-            <span><a href="../rejestracja.html">Zarejestruj się</a></span><span><a href="../login.html"> Zaloguj
+            <span><a href="../rejestracja.html">Zarejestruj się</a></span><span><a href="./php/index.php">Strona główna</a></span><span><a href="../login.html"> Zaloguj
                     się</a></span>
         </nav>
         <main>

@@ -20,14 +20,15 @@
             <h1>Klub podpalaczy książek</h1>
         </header>
         <nav>
-            <span><a href="../rejestracja.html">Zarejestruj się</a></span><span><a href="../login.html"> Zaloguj
+            <span><a href="../rejestracja.html">Zarejestruj się</a></span>
+            <span><a href="./index.php">Strona główna</a></span>
+            <span><a href="../login.html"> Zaloguj
                     się</a></span>
         </nav>
         <main>
             <?php
             //podlaczenie bazy danych
             require "./dbconnect.php";
-
 
             $nickE = $_POST['nick'];
             $haslo = $_POST['haslo'];
@@ -49,9 +50,9 @@
                         $imie = $row["imie"];
                         $zalogowano = true;
                         global $zalogowano;
-                        
-                    }
-                    else {
+
+
+                    } else {
                         echo "Niepoprawny email lub hasło";
                     }
                 } else {
@@ -64,12 +65,10 @@
                         $imie = $row["imie"];
                         $zalogowano = true;
                         global $zalogowano;
-                    }
-                    else {
+                    } else {
                         echo "Niepoprawny nick lub hasło";
                     }
-                }
-                else {
+                } else {
                     echo "Niepoprawny nick lub hasło";
                 }
             } else {
@@ -78,8 +77,10 @@
 
             global $zalogowano;
 
-            if($zalogowano == true) {
+            if ($zalogowano == true) {
                 echo "Poprawnie zalogowano!<br> Witaj " . $imie;
+                setcookie("nick", $nickE, time()+3600, "/");
+                global $imie;
             }
 
 
