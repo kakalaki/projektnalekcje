@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klub podpalaczy książek</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/wcag.js"></script>
   </head>
   <body>
     <div id="container">
       <header>
-        <h1>Klub podpalaczy książek</h1>
+        <h1 id="header1">Klub podpalaczy książek</h1>
+        <div style="position: fixed; right: 10vw;" id="wcag">
+          <button onclick="wcagb()"><span style="font-size:32px;">Aa</span></button>
+          <button onclick="wcagm()"><span style="font-size: 24px;">Aa</span></button>
+        </div>
       </header>
       <nav>
+        <div id="spans">
         <span><a href="./rejestracja.html">Zarejestruj się</a></span>
         <span><a href="./php/index.php">Strona główna</a></span>
         <span><a href="./login.html"> Zaloguj się</a></span>
+      </div>
       </nav>
-      <main>
+      <main id="main">
         <form action="./php/login.php" method="post">
           <h3>Logowanie się</h3>
           <br />
@@ -24,7 +31,7 @@
           <input type="text" name="nick" id="nick" /><br />
           <span>Hasło:</span><br />
           <input type="password" name="haslo" id="haslo" /><br />
-          <input type="submit" value="Zaloguj się" />
+          <input type="submit" value="Zaloguj się" id="zaloguj"/>
         </form>
       </main>
       <footer>

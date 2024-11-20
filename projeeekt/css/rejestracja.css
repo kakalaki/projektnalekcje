@@ -13,6 +13,7 @@ body {
     animation: bg 15s infinite;
     flex-direction: column;
     padding: 2vh;
+    font-family: "Open Sans";
 }
 
 @keyframes bg {
@@ -37,6 +38,9 @@ body {
     }
 }
 
+
+
+
 header {
     width: 100%;
     display: flex;
@@ -49,49 +53,42 @@ header {
     border-radius: 5px;
 }
 
+@keyframes headertransform {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 header h1 {
     width: 100%;
     font-size: 24px;
     font-weight: 600;
     color: #333;
-    transition: all 0.4s ease-in-out;
-    margin: 0 1vw;
+    transition: headertransform 0.5s;
 }
 
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background: rgba(240, 240, 240, 0.7);
-    padding: 10px;
+    padding: 10px 3vw;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-#wcag button{
-    border: none;
-    background: none;
-    color: #333;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    padding: 0;
-
-}
-
-#spans {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    font-size: 18px;
-}
-
 nav a {
+    margin: 0 15vw;
     text-decoration: none;
     color: #333;
+    font-size: 18px;
     font-weight: 500;
     transition: all 0.4s ease-in-out;
-    padding: 0;
 }
 
 nav a:hover {
@@ -177,8 +174,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3.5vh 0;
+    padding: 1vh 0;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    font-size: smaller;
 }
